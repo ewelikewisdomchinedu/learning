@@ -30,7 +30,7 @@ sub-header {
 
 /* background */
 
-*/ .sub-content {
+.sub-content {
   position: relative;
   z-index: 2;
   width: 90%;
