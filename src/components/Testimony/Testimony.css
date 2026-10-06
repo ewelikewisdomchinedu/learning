@@ -25,17 +25,16 @@
   background-color: white;
   padding: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3 ease;
-  border-radius: 20%;
 }
 .testimonial-container .card:hover {
   transform: scale(1.07);
+  box-shadow: 0.15px 15px 35px rgba(0, 0, 0, 0.25);
 }
 .testimonial-container .card img {
-  width: 100%;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .testimonial-container .card h3 {
   margin-bottom: 15px;
@@ -44,4 +43,55 @@
   text-align: left;
   color: #555;
   line-height: 1.3;
+}
+
+/* testimonail responsive */
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 6%;
+  }
+  .testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+  .testimonial-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .testimonial-container .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .testimonial-container .card img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 40px 5%;
+  }
+  .testimonials h4 {
+    font-size: 14px;
+  }
+  .testimonials h2 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  .testimonial-container {
+    gap: 25px;
+  }
+  .testimonial-container .card {
+    padding: 20px;
+  }
+  .testimonial-container .card img {
+    height: 205px;
+  }
+  .testimonial-container.card h2 {
+    font-size: 25px;
+  }
+  .testimonial-container.card p {
+    font-size: 18px;
+  }
 }

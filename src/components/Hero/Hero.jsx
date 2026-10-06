@@ -31,9 +31,9 @@ const Hero = () => {
             Book a Demo*
           </a>
         </div>
-        <div className="about-image">
+        {/* <div className="about-image">
           <img src={ground} alt="About Us" />
-        </div>
+        </div> */}
       </section>
     </div>
   );
